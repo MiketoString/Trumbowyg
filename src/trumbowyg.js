@@ -338,7 +338,8 @@ jQuery.trumbowyg = {
                 .addClass(prefix + 'editor')
                 .attr({
                     'contenteditable': true,
-                    'dir': t.lang._dir || t.o.dir
+                    'dir': t.lang._dir || t.o.dir,
+                    'tabindex': t.tabindex || -1
                 })
                 .html(html)
             ;
